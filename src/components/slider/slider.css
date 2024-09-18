@@ -1,0 +1,83 @@
+.slider-container .slider-info {
+    height: 800px;
+}
+
+.slider-container {
+    background: rgba(100, 100, 185, 0.473);
+}
+
+.slider-info {
+    overflow: hidden;
+    margin: 0;
+    background-image: url("../../pictures/slider/zombie-sharp.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.slider-info-container {
+    width: 650px;
+    padding-left: 240px;
+    padding-top: 220px;
+}
+
+.slider-header {
+    color: white;
+    font-size: 60px;
+}
+
+.slider-para {
+    color: white;
+    font-size: 30px;
+}
+
+.zombie-button {
+    border-style: none;
+    border-radius: 8px;
+    background-color: rgba(0, 0, 0, 0.726);
+    color: white;
+    margin-right: 12px;
+    padding: 24px 20px 24px 20px;
+    font-size: 24px;
+}
+
+@media screen and (max-width: 1200px) {
+    .slider-header {
+        margin-bottom: 0px;
+    }
+    .slider-info-container {
+        padding-left: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .slider-info-container {
+        width: 80%;
+        padding-top: 80px;
+    }
+
+    .slider-container .slider-info {
+        height: 500px;
+    }
+
+    .slider-header {
+        font-size: 40px;
+    }
+    
+    .slider-para {
+        font-size: 20px;
+    }
+    
+    .zombie-button {
+        margin-right: 6px;
+        font-size: 20px;
+    }
+}
+

@@ -54,7 +54,6 @@
 }
 
 .dropdown-content {
-    margin-top: 4px;
     display: none;
     position: absolute;
 }
@@ -67,17 +66,28 @@
 }
 
 @media screen and (max-width: 768px) {
+    .header {
+        right: 0px;
+    }
+
+    .button-bar {
+        right: 0px;
+    }
+
     .button-all {
         display: none;
     }
 
     .button-head {
         background-color: rgba(0, 0, 0, 0.397);
-        padding: 9px 0px 9px 0px;
-        width: 150px;
+        padding: 12px 0px 12px 10px;
+        width: 140px;
+        text-align: left;
     }
 
     .button-dropdown {
+        padding: 12px 0px 12px 10px;
+        width: 140px;
         display: block;
     }
 }
