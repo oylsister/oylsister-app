@@ -10,7 +10,7 @@ function Intro()
         <>
             <Header />
             <div className="intro-body">
-                <video src={video} autoplay loop muted className="zriot"></video>
+                <video src={video} autoPlay loop muted className="zriot"></video>
                 <div className="intro-content">
                     <h1 className="big-name">About me</h1>
                     <div className="intro">My name is James Naphat Promphakping aka Oylsister.
