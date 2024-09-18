@@ -1,0 +1,43 @@
+.header {
+    margin: 0px;
+    top: 0px;
+    left: 8px;
+    right: 8px;
+
+    height: 80px;
+    position: absolute;
+}
+
+.button-list {
+    right: 60px;
+    display: flex;
+    position: absolute;
+    z-index: 25;
+}
+
+.button-head {
+    padding: 28px;
+    margin-top: 0px;
+    font-size: 17px;
+    color: white;
+
+    background-color: rgba(0, 0, 0, 0);
+    border-style: none;
+    transition: background-color 0.2s ease-out, color 0.2s ease-out;
+}
+
+.button-head:hover {
+    cursor: pointer;
+    background-color: white;
+    color: black;
+}
+
+.button-head:active {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 1024px) {
+    .button-list {
+        right: 10px;
+    }
+}
