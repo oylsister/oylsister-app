@@ -1,0 +1,36 @@
+body {
+    background-image: url('../../pictures/background/vs2022_new.png');
+    background-size: cover;
+    background-attachment: fixed;
+
+    background-color: rgba(0, 140, 255, 0.144);
+    background-blend-mode: screen;
+}
+
+.contract-container {
+    padding-top: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contract-container h1 {
+    font-size: 50px;
+    color: white;
+}
+
+.contract-info {
+    width: 25%;
+}
+
+.contract-info p {
+    margin: 0;
+    font-size: 18px;
+    color:white;
+}
+
+.contract-info a {
+    text-decoration: underline;
+    color: inherit
+}

@@ -1,3 +1,8 @@
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 .header {
     margin: 0px;
     top: 0px;

@@ -1,5 +1,9 @@
-.silder-container {
+.slider-container {
     height: 800px;
+    background-image: url("../../pictures/slider/zombie-sharp.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: background-image 0.3s;
 }
 
 .zombie-info {
@@ -9,11 +13,13 @@
 .zombie-info {
     overflow: hidden;
     margin: 0;
+    /*
     background-image: url("../../pictures/slider/zombie-sharp.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-blend-mode: multiply;
     background-color: rgba(165, 42, 42, 0.438);
+    */
 }
 
 .zombie-info-container {
