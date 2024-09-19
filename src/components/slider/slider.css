@@ -1,33 +1,44 @@
-.slider-container .slider-info {
+.silder-container {
     height: 800px;
 }
 
-.slider-container {
-    background: rgba(100, 100, 185, 0.473);
+.zombie-info {
+    height: 800px;
 }
 
-.slider-info {
+.zombie-info {
     overflow: hidden;
     margin: 0;
     background-image: url("../../pictures/slider/zombie-sharp.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-blend-mode: multiply;
+    background-color: rgba(165, 42, 42, 0.438);
 }
 
-.slider-info-container {
+.zombie-info-container {
     width: 650px;
     padding-left: 240px;
     padding-top: 220px;
 }
 
-.slider-header {
+.zombie-header {
     color: white;
     font-size: 60px;
+    text-shadow: 4px 4px 9px rgba(0,0,0,0.3);
 }
 
-.slider-para {
+.zombie-para {
     color: white;
     font-size: 30px;
+    text-shadow: 4px 4px 9px rgba(0,0,0,0.8);
+}
+
+.slider-controller {
+    position: absolute;
+    margin-left: 47%;
+    margin-right: 50%;
+    margin-top: -5%;
 }
 
 .zombie-button {
@@ -38,13 +49,26 @@
     margin-right: 12px;
     padding: 24px 20px 24px 20px;
     font-size: 24px;
+    transition: background-color 0.2s;
+}
+
+.zombie-button:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.952);
+}
+
+.zombie-button:active {
+    background-color: white;
+    cursor: pointer;
+    color:black;
+    text-decoration: underline;
 }
 
 @media screen and (max-width: 1200px) {
     .slider-header {
         margin-bottom: 0px;
     }
-    .slider-info-container {
+    .zombie-info-container {
         padding-left: 0px;
         display: flex;
         flex-direction: column;
@@ -58,26 +82,28 @@
 }
 
 @media screen and (max-width: 660px) {
-    .slider-info-container {
+    .zombie-info-container {
         width: 80%;
         padding-top: 80px;
     }
 
-    .slider-container .slider-info {
-        height: 500px;
+    .slider-container .zombie-info {
+        height: 600px;
     }
 
-    .slider-header {
+    .zombie-header {
         font-size: 40px;
     }
     
-    .slider-para {
+    .zombie-para {
         font-size: 20px;
     }
     
     .zombie-button {
         margin-right: 6px;
+        margin-bottom: 6px;
         font-size: 20px;
+        padding: 18px 12px 18px 12px;
     }
 }
 

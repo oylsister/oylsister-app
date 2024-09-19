@@ -40,24 +40,20 @@
     text-decoration: underline;
 }
 
-.dropdown-container:hover .dropdown-content {
+.dropdown-container:hover > .dropdown-content {
     display: block;
 }
 
-.dropdown-container:hover .button-dropdown {
+.dropdown-container:hover > .button-dropdown {
     background-color: white;
     color: black;
 }
 
 .dropdown-content {
     right: 0px;
-}
-
-.dropdown-content {
     display: none;
     position: absolute;
 }
-
 
 @media screen and (max-width: 1024px) {
     .button-bar {
