@@ -1,6 +1,6 @@
 .slider-container {
     height: 800px;
-    background-image: url("../../pictures/slider/zombie-sharp.jpg");
+    background-image: url("../../../public/slider/zombiesharp.png");
     background-repeat: no-repeat;
     background-size: cover;
     transition: background-image 0.3s;
@@ -120,8 +120,8 @@
         padding-top: 80px;
     }
 
-    .slider-container .zombie-info {
-        height: 600px;
+    .slider-container, .slider-info {
+        height: 500px;
     }
 
     .zombie-header {

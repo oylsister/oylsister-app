@@ -6,11 +6,11 @@ import { useState, useEffect, React } from 'react';
 const infoSlider = [ 
     {
         func: ZombieSharpInfo(),
-        image: "http://localhost:3000/static/media/zombie-sharp.70a46b06867f90b0b305.jpg"
+        image: "/slider/zombiesharp.png"
     },
     {
         func: JammingInfo(),
-        image: "http://localhost:3000/static/media/vs2022_new.675cd6335fea1a6aa234.png"
+        image: "/slider/jamming.png"
     } 
 ];
 
@@ -86,7 +86,7 @@ function Slider()
     function setInfoData(index)
     {
         let sliderBG = document.getElementById("sliderBG");
-        sliderBG.style.backgroundImage = `url("${index.image}")`;
+        sliderBG.style.backgroundImage = `url(${index.image})`;
 
         setCurrectSlide(index.func);
     }
@@ -124,7 +124,7 @@ function JammingInfo()
                 <h1 className='zombie-header'>Jamming</h1>
                 <p className='zombie-para'>An incredible app that you can search and add song or music into your playlist with ease And saving them into your Spotify account!</p>
                 <div className='zombie-button-list'>
-                    <button className='zombie-button' id='github' onClick={Redirect.ZombieSharpLink}>View in github</button>
+                    <button className='zombie-button' id='github' onClick={Redirect.JammingLink}>View in github</button>
                 </div>
             </div>
         </div>
