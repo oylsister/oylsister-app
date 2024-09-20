@@ -3,17 +3,21 @@ import '../../utils/redirect';
 import Redirect from "../../utils/redirect";
 import { useState, useEffect, React } from 'react';
 
-const infoSlider = [ ZombieSharpInfo(), JammingInfo() ];
-
-const sildeImage = [ 
-    "http://localhost:3000/static/media/zombie-sharp.70a46b06867f90b0b305.jpg",
-    "http://localhost:3000/static/media/vs2022_new.675cd6335fea1a6aa234.png"
- ];
+const infoSlider = [ 
+    {
+        func: ZombieSharpInfo(),
+        image: "http://localhost:3000/static/media/zombie-sharp.70a46b06867f90b0b305.jpg"
+    },
+    {
+        func: JammingInfo(),
+        image: "http://localhost:3000/static/media/vs2022_new.675cd6335fea1a6aa234.png"
+    } 
+];
 
 function Slider()
 {
     const [activeIndex, setActiveIndex] = useState(0);
-    const [currentSlide, setCurrectSlide] = useState(infoSlider[0]);
+    const [currentSlide, setCurrectSlide] = useState(infoSlider[0].func);
     const [slideDone, setSlideDone] = useState(true);
     const [timeID, setTimeID] = useState(null);
 
@@ -25,22 +29,19 @@ function Slider()
 
                     //console.log(timeID);
 
-                    if(activeIndex >= sildeImage.length - 1)
+                    if(activeIndex >= infoSlider.length - 1)
                         setActiveIndex(0);
             
                     else
                         setActiveIndex(activeIndex + 1);
             
             
-                    let sliderBG = document.getElementById("sliderBG");
-                    sliderBG.style.backgroundImage = `url("${sildeImage[activeIndex]}")`;
-            
-                    setCurrectSlide(infoSlider[activeIndex]);
+                    setInfoData(infoSlider[activeIndex]);
                     setSlideDone(true);
                 }, 5000)
             );
         }
-    }, [slideDone]);
+    }, [slideDone, activeIndex]);
 
     const AutoPlayStop = () => {
         console.log("They're Stop")
@@ -50,17 +51,52 @@ function Slider()
         }
     };
     
-      const AutoPlayStart = () => {
+    const AutoPlayStart = () => {
         console.log("They're start")
         if (!slideDone) {
             setSlideDone(true);
         }
     };
 
+
+    const nextSlider = () => {
+        setActiveIndex((value) => {
+            if(value >= infoSlider.length - 1)
+                return 0;
+            else 
+                return value + 1;
+        });
+        setInfoData(infoSlider[activeIndex]);
+        clearTimeout(timeID);
+        setSlideDone(false);
+    };
+
+    const prevSilder = () => {
+        setActiveIndex((value) => {
+            if(value <= 0)
+                return infoSlider.length - 1;
+            else 
+                return value - 1;
+        });
+        setInfoData(infoSlider[activeIndex]);
+        clearTimeout(timeID);
+        setSlideDone(false);
+    };
+
+    function setInfoData(index)
+    {
+        let sliderBG = document.getElementById("sliderBG");
+        sliderBG.style.backgroundImage = `url("${index.image}")`;
+
+        setCurrectSlide(index.func);
+    }
+
     return (
         <div className="slider-container" onMouseEnter={AutoPlayStop}
         onMouseLeave={AutoPlayStart} id="sliderBG">
+            <button className='slider-btn-previous' onClick={(e) => {prevSilder();}}>&#8249;</button>
             {currentSlide}
+            <button className='slider-btn-next' onClick={(e) => {nextSlider();}}>&#8250;</button>
         </div>
     );
 }
@@ -74,7 +110,6 @@ function ZombieSharpInfo()
                 <p className='zombie-para'>Bringing you to one of the most amazing gamemode of Counter-Strike known as <br /> "Zombie Mode". Now available for free!</p>
                 <div className='zombie-button-list'>
                     <button className='zombie-button' id='github' onClick={Redirect.ZombieSharpLink}>View in github</button>
-                    <button className='zombie-button' id='more'>Learn More</button>
                 </div>
             </div>
         </div>
@@ -87,10 +122,9 @@ function JammingInfo()
         <div className='slider-info'>
             <div className='zombie-info-container'>
                 <h1 className='zombie-header'>Jamming</h1>
-                <p className='zombie-para'>An incredible app letting you to search and add song or music into your playlist with ease.</p>
+                <p className='zombie-para'>An incredible app that you can search and add song or music into your playlist with ease And saving them into your Spotify account!</p>
                 <div className='zombie-button-list'>
                     <button className='zombie-button' id='github' onClick={Redirect.ZombieSharpLink}>View in github</button>
-                    <button className='zombie-button' id='more'>Learn More</button>
                 </div>
             </div>
         </div>

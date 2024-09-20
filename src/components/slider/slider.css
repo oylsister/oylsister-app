@@ -4,6 +4,39 @@
     background-repeat: no-repeat;
     background-size: cover;
     transition: background-image 0.3s;
+    display: flex;
+    align-items: center;
+}
+
+.slider-btn-previous, .slider-btn-next {
+    display: block;
+    text-align: center;
+    font-size: 50px;
+    background-color: rgba(0, 0, 0, 0.322);
+    border-style: none;
+    max-height: 82px;
+    position: absolute;
+    color: white;
+    margin: 0;
+    padding: 10px 15px 25px 15px;
+}
+
+.slider-btn-previous:hover, .slider-btn-next:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.699);
+}
+
+.slider-btn-previous:active, .slider-btn-next:active {
+    cursor: pointer;
+    background-color: rgb(0, 0, 0);
+}
+
+.slider-btn-next {
+    right: 0px;
+}
+
+.slider-btn-previous {
+    left: 0px;
 }
 
 .slider-info {
