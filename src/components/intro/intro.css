@@ -3,9 +3,8 @@
     top: 0px;
     right: 0px;
     left: 0px;
-    max-height: 620px;
-    padding-bottom: 120px;
-    background: rgba(30, 57, 114, 0.644);
+    height: 690px;
+    background: rgba(30, 57, 114, 0.856);
     overflow: hidden;
     overflow-x: hidden;
     z-index: 20;
@@ -13,8 +12,8 @@
 }
 
 .intro-content {
-    padding-top: 100px;
-    font-size: 19px;
+    padding-top: 150px;
+    font-size: 25px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -57,6 +56,7 @@
 {
     .intro-content {
         width: 80%;
+        font-size: 19px;
     }
 
     .zriot {

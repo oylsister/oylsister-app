@@ -85,12 +85,12 @@
     transition: background-color 0.2s;
 }
 
-.zombie-button:hover {
+.zombie-button:hover, .github-button:hover {
     cursor: pointer;
     background-color: rgba(0, 0, 0, 0.952);
 }
 
-.zombie-button:active {
+.zombie-button:active, .github-button:active {
     background-color: white;
     cursor: pointer;
     color:black;

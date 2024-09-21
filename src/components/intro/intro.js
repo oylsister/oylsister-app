@@ -1,7 +1,7 @@
 import Header from "../header/header";
 import React from "react";
 import './intro.css'
-import video from '../../video/zriot_resize.mp4';
+import video from '../../video/ZriotFull.mp4';
 
 
 function Intro()

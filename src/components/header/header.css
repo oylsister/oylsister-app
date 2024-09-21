@@ -6,8 +6,8 @@ a {
 .header {
     margin: 0px;
     top: 0px;
-    left: 8px;
-    right: 8px;
+    left: 0px;
+    right: 0px;
 
     height: 80px;
     position: absolute;

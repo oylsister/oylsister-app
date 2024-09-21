@@ -10,11 +10,11 @@ const infoSlider = [
     },
     {
         func: JammingInfo(),
-        image: "/slider/jamming.png"
+        image: "/slider/jamming_op.png"
     },
     {
         func: GitHubInfo(),
-        image: "/slider/vswindows.png"
+        image: "/slider/vswindows_op.png"
     } 
 ];
 
