@@ -55,13 +55,13 @@
     padding-top: 220px;
 }
 
-.zombie-header {
+.zombie-header, .github-header {
     color: white;
     font-size: 60px;
     text-shadow: 4px 4px 9px rgba(0,0,0,0.3);
 }
 
-.zombie-para {
+.zombie-para, .github-para {
     color: white;
     font-size: 30px;
     text-shadow: 4px 4px 9px rgba(0,0,0,0.8);
@@ -74,7 +74,7 @@
     margin-top: -5%;
 }
 
-.zombie-button {
+.zombie-button, .github-button {
     border-style: none;
     border-radius: 8px;
     background-color: rgba(0, 0, 0, 0.726);
@@ -97,6 +97,19 @@
     text-decoration: underline;
 }
 
+.github-info-container {
+    padding-top: 10%;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
 @media screen and (max-width: 1200px) {
     .slider-header {
         margin-bottom: 0px;
@@ -115,7 +128,7 @@
 }
 
 @media screen and (max-width: 660px) {
-    .zombie-info-container {
+    .zombie-info-container, .github-info-container {
         width: 80%;
         padding-top: 80px;
     }
@@ -124,15 +137,15 @@
         height: 500px;
     }
 
-    .zombie-header {
+    .zombie-header, .github-header {
         font-size: 40px;
     }
     
-    .zombie-para {
+    .zombie-para, .github-para {
         font-size: 20px;
     }
     
-    .zombie-button {
+    .zombie-button, .github-button {
         margin-right: 6px;
         margin-bottom: 6px;
         font-size: 20px;
