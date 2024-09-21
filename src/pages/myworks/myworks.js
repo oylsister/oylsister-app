@@ -19,20 +19,10 @@ function VFXWork()
             <h1>Animation and VFX</h1>
             <div>
                 <h1>The Dust Animation Trailer</h1>
-                <p></p>
+                <p>An animation thesis </p>
             </div>
         </div>
     );
 }
-
-function theDust()
-    {
-        return (
-            <div>
-                <h1>The Dust</h1>
-                <p></p>
-            </div>
-        )
-    };
 
 export default MyWorks;
