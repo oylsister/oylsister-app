@@ -90,10 +90,12 @@ function Slider()
     function setInfoData(index)
     {
         let sliderBG = document.getElementById("sliderBG");
-        sliderBG.style.backgroundImage = `url(${index.image})`;
 
-
-        setCurrectSlide(index.func);
+        if(sliderBG !== null)
+        {
+            sliderBG.style.backgroundImage = `url(${index.image})`;
+            setCurrectSlide(index.func);
+        }
     }
 
     return (

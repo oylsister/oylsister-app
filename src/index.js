@@ -7,7 +7,8 @@ import {
   createBrowserRouter,
   RouterProvider
 } from "react-router-dom";
-import Contracts from './pages/contracts/contracts';
+import MyWorks from './pages/myworks/myworks';
+
 
 const router = createBrowserRouter([
   {
@@ -15,8 +16,8 @@ const router = createBrowserRouter([
     element: <App />
   },
   {
-    path: "contract",
-    element: <Contracts />
+    path: "myworks",
+    element: <MyWorks />
   }
 ]);
 

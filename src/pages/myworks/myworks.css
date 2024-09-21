@@ -1,0 +1,21 @@
+body {
+    background-image: url('../../pictures/background/vs2022_new.png');
+    background-size: cover;
+    background-attachment: fixed;
+
+    background-color: rgba(0, 140, 255, 0.144);
+    background-blend-mode: screen;
+}
+
+.work-container {
+    padding-top: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.work-container h1 {
+    font-size: 50px;
+    color: white;
+}

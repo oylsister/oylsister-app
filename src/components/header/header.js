@@ -12,8 +12,8 @@ function Header()
                 <div className="button-all">
                     <button className="button-head"><Link to="/">Home</Link></button>
                     <button className="button-head" onClick={Redirect.ZombieSharpLink}>Zombie Sharp</button>
-                    <button className="button-head">My Works</button>
-                    <button className="button-head"><Link to="/contract">Contract Me</Link></button>
+                    <button className="button-head"><Link to="/myworks">My Works</Link></button>
+                    <button className="button-head">Contract Me</button>
                 </div>
                 <div className="dropdown-container">
                     <button className="button-dropdown">Menu</button>
