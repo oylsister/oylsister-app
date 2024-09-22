@@ -110,7 +110,12 @@
     margin-bottom: auto;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 927px) {
+    .slider-container {
+        display: flex;
+        justify-content: center;
+    }
+
     .slider-header {
         margin-bottom: 0px;
     }

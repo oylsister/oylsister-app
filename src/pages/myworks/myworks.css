@@ -13,9 +13,57 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    color: white;
 }
 
-.work-container h1 {
+.work-info {
+    width: 75%;
+    margin-bottom: 80px;
+}
+
+.work-section {
     font-size: 50px;
-    color: white;
+    text-align: center;
+}
+
+.work-title {
+    font-size: 31px;
+}
+
+.work-description {
+    font-size: 22px;
+}
+
+.video-link {
+    width: 300px;
+    height: 100%;
+}
+
+.work-video-container iframe{
+    border-style: none;
+}
+
+.button-github {
+    margin-top: 25px;
+}
+
+.bv-container {
+    display: flex;
+    flex-direction: row;
+}
+
+@media screen and (max-width: 1320px) {
+    .bv-container {
+        display: block;
+    }
+    .work-video-container iframe {
+        margin-bottom: 25px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .work-video-container {
+        display: flex;
+        justify-content: center;
+    }  
 }

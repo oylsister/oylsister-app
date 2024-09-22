@@ -1,6 +1,7 @@
 import './slider.css';
 import '../../utils/redirect';
 import Redirect from "../../utils/redirect";
+import Button from './button';
 import { useState, useEffect, React } from 'react';
 
 const infoSlider = [ 
@@ -116,7 +117,7 @@ function ZombieSharpInfo()
                 <h1 className='zombie-header'>ZombieSharp</h1>
                 <p className='zombie-para'>Bringing you to one of the most amazing gamemode of Counter-Strike known as <br /> "Zombie Mode". Now available for free!</p>
                 <div className='zombie-button-list'>
-                    <button className='zombie-button' onClick={Redirect.ZombieSharpLink}>View in github</button>
+                    <Button link={Redirect.ZombieSharpLink} message="View in github"/>
                 </div>
             </div>
         </div>
@@ -131,7 +132,7 @@ function JammingInfo()
                 <h1 className='zombie-header'>Jamming</h1>
                 <p className='zombie-para'>An incredible app that you can search and add song or music into your playlist with ease And saving them into your Spotify account!</p>
                 <div className='zombie-button-list'>
-                    <button className='zombie-button' onClick={Redirect.JammingLink}>View in github</button>
+                    <Button link={Redirect.JammingLink} message="View in github"/>
                 </div>
             </div>
         </div>
