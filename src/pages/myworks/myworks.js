@@ -76,6 +76,16 @@ function ZombieSharoWork()
                     <Button className="button-github" link={Redirect.ZombieSharpStatsLink} message="View in github"/>
                 </div>
             </div>
+
+            <div className="work-info">
+                <h1 className="work-title">Jamming App</h1>
+                <p className="work-description">
+                    A simple React.js application allowing user to search for the song and save them to a new playlist through Spotify API.
+                </p>
+                <div className="button-github">
+                    <Button className="button-github" link={Redirect.JammingLink} message="View in github"/>
+                </div>
+            </div>
         </div>
     );
 }
