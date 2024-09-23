@@ -8,19 +8,11 @@ import MyWorks from './pages/myworks/myworks';
 
 function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Header/>}>
-          <Route index element={<App/>} />
-          <Route path="myworks" element={<MyWorks />} />
-        </Route>
-      </Routes>
       <div className="App">
         <Intro />
         <Slider />
         <Skills />
       </div>
-    </BrowserRouter>
   );
 }
 
