@@ -12,11 +12,11 @@ const Contract = (props) =>
                 <div>
                     <p>Email: naphatpromp@gmail.com</p>
                     <div className="icon-link" onClick={Redirect.LinkedIdLink}>
-                        <img src="/icon/linkedin_icon.png" />
+                        <img src="/icon/linkedin_icon.png" alt="linkedin icon" />
                         <p>Linkedin</p>
                     </div>
                     <div className="icon-link" onClick={Redirect.RepositorLink}>
-                        <img src="/icon/github_logo_icon.png" />
+                        <img src="/icon/github_logo_icon.png" alt="repository icon"/>
                         <p>GitHub</p>
                     </div>
                 </div>
