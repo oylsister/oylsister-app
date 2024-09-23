@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/oylsister-app/static/css/main.6c938818.css",
+    "main.js": "/oylsister-app/static/js/main.b5527c3d.js",
+    "static/js/453.fa004f2c.chunk.js": "/oylsister-app/static/js/453.fa004f2c.chunk.js",
+    "static/media/ZriotFull.mp4": "/oylsister-app/static/media/ZriotFull.4784547d6011793e0aea.mp4",
+    "static/media/zombiesharp.png": "/oylsister-app/static/media/zombiesharp.daaab7d103a1477b9003.png",
+    "static/media/pc.jpg": "/oylsister-app/static/media/pc.795815956696131e3ed1.jpg",
+    "static/media/vs2022_new.png": "/oylsister-app/static/media/vs2022_new.675cd6335fea1a6aa234.png",
+    "index.html": "/oylsister-app/index.html",
+    "main.6c938818.css.map": "/oylsister-app/static/css/main.6c938818.css.map",
+    "main.b5527c3d.js.map": "/oylsister-app/static/js/main.b5527c3d.js.map",
+    "453.fa004f2c.chunk.js.map": "/oylsister-app/static/js/453.fa004f2c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6c938818.css",
+    "static/js/main.b5527c3d.js"
+  ]
+}
