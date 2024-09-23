@@ -1,7 +1,7 @@
 {
   "name": "oylsister-app",
   "version": "0.1.0",
-  "homepage": "https://oylsister.github.io/",
+  "homepage": "https://oylsister.github.io/oylsister-app",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
