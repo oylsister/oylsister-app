@@ -10,7 +10,7 @@ function MyWorks()
         <div className="background">
             <Header />
             <VFXWork />
-            <ZombieSharoWork />
+            <CodingWork />
         </div>
     );
 }
@@ -42,7 +42,7 @@ function VFXWork()
     );
 }
 
-function ZombieSharoWork()
+function CodingWork()
 {
     return (
         <div className="work-container" style={{paddingTop: "20px"}}>
@@ -58,7 +58,7 @@ function ZombieSharoWork()
                         <iframe width="560" height="315" src="https://www.youtube.com/embed/V_NfPW3Imhs?si=SVRVwO33BU_lR5dR" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
                     </div>
                     <div className="work-video-container">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/o6zPAx_hsHI?si=4U7F3jIn_2aBRQrC" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/o6zPAx_hsHI?si=4U7F3jIn_2aBRQrC" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
                     </div>
                 </div>
                 <div className="button-github">
@@ -70,7 +70,7 @@ function ZombieSharoWork()
                 <h1 className="work-title">Zombie Sharp: Stats website</h1>
                 <p className="work-description">
                     A simple website showing player stats, collecting data from ZombieSharp plugin that you're hosting.
-                    <br /> Special Contributor: <a target="_blank" href="https://github.com/SparkyCloudy">SparkyCloud</a>
+                    <br /> Special Contributor: <a target="_blank" rel="noreferrer" href="https://github.com/SparkyCloudy">SparkyCloud</a>
                 </p>
                 <div className="button-github">
                     <Button className="button-github" link={Redirect.ZombieSharpStatsLink} message="View in github"/>
@@ -82,6 +82,9 @@ function ZombieSharoWork()
                 <p className="work-description">
                     A simple React.js application allowing user to search for the song and save them to a new playlist through Spotify API.
                 </p>
+                <div className="work-video-container">
+                    <iframe width="960" height="540" src="https://www.youtube.com/embed/vd3s4itUwFA?si=kCnuI18MxMlaCxYE&autoplay=1&mute=1" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+                </div>
                 <div className="button-github">
                     <Button className="button-github" link={Redirect.JammingLink} message="View in github"/>
                 </div>

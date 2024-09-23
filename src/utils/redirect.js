@@ -19,6 +19,10 @@ const Redirect = {
     SparkyLink()
     {
         window.open("https://github.com/SparkyCloudy", "_blank");
+    },
+    LinkedIdLink()
+    {
+        window.open("https://www.linkedin.com/in/naphat-promphakping-3a8829328/", "_blank");
     }
 }
 
