@@ -43,15 +43,8 @@
 }
 
 .slider-info {
-    overflow: hidden;
     margin: 0;
     transition: opacity 0.3s;
-}
-
-.zombie-info-container {
-    width: 650px;
-    padding-left: 240px;
-    padding-top: 220px;
 }
 
 .zombie-header, .github-header {
@@ -96,6 +89,18 @@
     text-decoration: underline;
 }
 
+.zombie-info-space {
+    width: 100%;
+}
+
+.zombie-info-container {
+    width: 650px;
+    margin-left: 20%;
+    margin-right: 40%;
+    padding-top: 220px;
+}
+
+
 .github-info-container {
     padding-top: 10%;
     width: 60%;
@@ -132,9 +137,15 @@
 }
 
 @media screen and (max-width: 660px) {
-    .zombie-info-container, .github-info-container {
+    .zombie-info-container {
         width: 80%;
         padding-top: 80px;
+    }
+
+    .github-info-container {
+        width: 80%;
+        padding: 0;
+        justify-content: center;
     }
 
     .slider-container, .slider-info {
@@ -157,3 +168,8 @@
     }
 }
 
+@media screen and (max-width: 365px) {
+    .slider-container, .slider-info {
+        height: 600px;
+    }
+}

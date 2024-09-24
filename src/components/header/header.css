@@ -42,10 +42,6 @@ a {
     text-decoration: underline;
 }
 
-.dropdown-container:hover > .dropdown-content {
-    display: block;
-}
-
 .dropdown-container:hover > .button-dropdown {
     background-color: white;
     color: black;
@@ -53,8 +49,8 @@ a {
 
 .dropdown-content {
     right: 0px;
-    display: none;
-    position: absolute;
+    display: flex;
+    flex-direction: column;
 }
 
 @media screen and (max-width: 1024px) {
